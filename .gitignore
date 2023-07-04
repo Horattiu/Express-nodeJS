@@ -7,3 +7,4 @@ node_modules/
 .env.local
 
 # Ignore dependency lock files
+.vercel
