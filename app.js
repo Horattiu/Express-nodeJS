@@ -7,6 +7,7 @@ const blogRoutes = require("./routes/blogRoutes");
 // express app
 
 const app = express();
+const port = 3000;
 
 // connect to mondoDB
 
@@ -15,7 +16,7 @@ mongoose
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
-  .then((result) => app.listen(3000))
+  .then((result) => app.listen(port))
   .catch((err) => console.log(err));
 
 // register view engine
